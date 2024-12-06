@@ -4,12 +4,13 @@ function CharacterCard({ character }) {
   return (
     <Link
       to={`/characters/${character.id}`}
-      className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition"
+      className="flex items-center justify-center transform hover:scale-105 transition duration-300"
     >
-      <img src={character.image} alt={character.name} className="w-full h-48 object-cover" />
-      <div className="p-4">
-        <h2 className="text-lg font-bold text-gray-800">{character.name}</h2>
-      </div>
+      <img
+        src={character.image}
+        alt={character.name}
+        className="w-32 h-32 object-cover rounded-full ring-4 ring-white shadow-lg transition-transform duration-300 hover:scale-110"
+      />
     </Link>
   );
 }

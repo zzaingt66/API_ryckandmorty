@@ -23,7 +23,7 @@ function CharacterDetail() {
   }
 
   return (
-    <div className="bg-gray-800 text-white p-6 rounded-lg shadow-lg max-w-4xl mx-auto mt-8">
+    <div className="bg-slate-950 text-white p-6 rounded-lg shadow-lg max-w-4xl mx-auto mt-8">
       <div className="flex flex-col sm:flex-row items-center gap-6">
         <img
           src={character.image}
